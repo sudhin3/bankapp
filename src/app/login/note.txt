@@ -57,6 +57,8 @@ Angular dierective
 
     -ngFor   -can dircetly apply in html to access elements from array
 
+    -ngif    -
+
 
 Form Validation in Angular
 ---------------------------
@@ -66,3 +68,40 @@ we can create form in new ways
     1.Template Driven form
 
     2.Model Driven form
+
+        -Reactive Form
+        --------------
+
+        ReactiveFormsModule  - module used to create model forms 
+
+        FormBuilder          - class of ReactiveFormsModule
+
+                   - group,array,control
+
+
+    validate Model Form
+    -------------------
+
+    Validator  - a class in angular it includes methods for apply validation
+
+    -access errors in Validator rule
+
+        this.RegisterForms.get('uname')?.error
+
+                        -valid   -empty respoonse
+
+                        -invalid   -content
+
+        if(this.RegisterForms.get('uname')?.errors){      //*ngIf
+
+        }        
+
+
+Local storage in Angular
+------------------------
+
+-store   localstorage.setItem()
+-access  localstorage.getItem()
+-delete  localstorage.removeItem()
+
+

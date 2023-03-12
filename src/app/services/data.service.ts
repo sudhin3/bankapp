@@ -9,6 +9,18 @@ export class DataService {
   currentacno=''
 
   constructor() { }
+
+  savedetails(){
+    if(this.userDeatails){
+      localStorage.setItem("database",JSON.stringify(this.userDeatails))
+    }
+    if(this.currentuser){
+      localStorage.setItem("currentuser",JSON.stringify(this.currentuser))
+    }
+    if(this.currentacno){
+      localStorage.setItem("currentacno",JSON.stringify(this.currentacno))
+    }
+  }
   
   userDeatails:any={
     1000:{acno:1000,username:"anu",password:123,balance:0,transaction:[]},
